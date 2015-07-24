@@ -41,9 +41,12 @@ SimpleformDemo.prototype.selectcoding = function() {
 SimpleformDemo.prototype.selectval= function(val){
     $('#heard').val(this.types[val]);
 };
-SimpleformDemo.prototype.changeText = function(){
-    
+SimpleformDemo.prototype.changeText = function(messageinput){
+    $('#message').val(messageinput);
 };
-
+SimpleformDemo.prototype.clicksubmitform = function()
+{
+    $('span[class="btn btn-default"]').click()
+};
 
 
